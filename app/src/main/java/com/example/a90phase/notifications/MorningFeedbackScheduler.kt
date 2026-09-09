@@ -5,6 +5,7 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.os.Build
+import com.example.a90phase.domain.common.DomainConstants
 import dagger.hilt.android.qualifiers.ApplicationContext
 import java.time.LocalDate
 import java.time.LocalDateTime
@@ -52,6 +53,6 @@ class MorningFeedbackScheduler @Inject constructor(
 
     companion object {
         private const val REQUEST_CODE = 1003
-        private const val OFFSET_MINUTES = 15L
+        private const val OFFSET_MINUTES = DomainConstants.MORNING_RATING_DELAY_MINUTES.toLong()
     }
 }
