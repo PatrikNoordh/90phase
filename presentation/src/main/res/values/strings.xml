@@ -126,7 +126,7 @@
     <string name="settings_checkin_time_description">Check-in time %1$s, tap to change</string>
     <string name="settings_bedtime_reminder">Bedtime Reminder</string>
     <string name="settings_morning_rating">Morning Rating</string>
-    <string name="settings_morning_bedtime_log">Morning Bedtime Log</string>
+    <string name="settings_morning_bedtime_log">Bedtime Follow-up</string>
     <string name="settings_discovery_phase">Discovery Phase</string>
     <string name="settings_discovery_info_description">Discovery Phase information</string>
     <string name="settings_discovery_view_results_description">View Discovery Phase results</string>
@@ -219,10 +219,12 @@
     <string name="onboarding_bedtime_reminder_title">Bedtime Reminder</string>
     <string name="onboarding_bedtime_reminder_body">We\'ll nudge you 15 minutes before your calculated bedtime so you can wind down.</string>
     <string name="onboarding_bedtime_reminder_note">Only fires on nights you\'ve set a bedtime.</string>
-    <string name="onboarding_morning_checkin_title">Morning Check-in</string>
-    <string name="onboarding_morning_checkin_body">A quick check-in after you wake helps build your personal sleep profile.</string>
-    <string name="onboarding_morning_rating_toggle">How did you sleep? (1–5)</string>
-    <string name="onboarding_morning_bedtime_toggle">What time did you go to bed?</string>
+    <string name="onboarding_morning_checkin_title">Morning Rating</string>
+    <string name="onboarding_morning_checkin_body">Each morning, about %1$d minutes after your wake time, 90phase sends a notification asking you to rate last night\'s sleep from 1 to 5 stars.</string>
+    <string name="onboarding_morning_rating_toggle">Send the morning rating notification</string>
+    <string name="onboarding_morning_rating_description">Tap a star, 1 to 5, straight from the notification.</string>
+    <string name="onboarding_morning_bedtime_description">Shown only after you rate, so 90phase can tell how long you actually slept.</string>
+    <string name="onboarding_morning_bedtime_toggle">Also ask when you went to bed</string>
     <string name="onboarding_smart_wake_title">Smart Wake</string>
     <string name="onboarding_smart_wake_body">Your phone detects movement to wake you at a lighter moment within a window you set. No microphone. No uploads. Completely local.</string>
     <string name="onboarding_smart_wake_warning">⚠ Phone must be on your bed to work. If you charge it away from bed — skip this, it won\'t help you.</string>

@@ -126,7 +126,7 @@
     <string name="settings_checkin_time_description">Incheckningstid %1$s, tryck för att ändra</string>
     <string name="settings_bedtime_reminder">Läggdagspåminnelse</string>
     <string name="settings_morning_rating">Morgonbetyg</string>
-    <string name="settings_morning_bedtime_log">Morgonens läggdagslogg</string>
+    <string name="settings_morning_bedtime_log">Följdfråga om läggdags</string>
     <string name="settings_discovery_phase">Utforskningsfas</string>
     <string name="settings_discovery_info_description">Information om utforskningsfasen</string>
     <string name="settings_discovery_view_results_description">Visa resultat för utforskningsfasen</string>
@@ -219,10 +219,12 @@
     <string name="onboarding_bedtime_reminder_title">Läggdagspåminnelse</string>
     <string name="onboarding_bedtime_reminder_body">Vi påminner dig 15 minuter innan din beräknade läggdags så att du hinner varva ner.</string>
     <string name="onboarding_bedtime_reminder_note">Utlöses bara de kvällar du har satt en läggdags.</string>
-    <string name="onboarding_morning_checkin_title">Morgonincheckning</string>
-    <string name="onboarding_morning_checkin_body">En snabb incheckning efter att du vaknat hjälper till att bygga din personliga sömnprofil.</string>
-    <string name="onboarding_morning_rating_toggle">Hur sov du? (1–5)</string>
-    <string name="onboarding_morning_bedtime_toggle">Vilken tid gick du och la dig?</string>
+    <string name="onboarding_morning_checkin_title">Morgonbetyg</string>
+    <string name="onboarding_morning_checkin_body">Varje morgon, ungefär %1$d minuter efter din väckningstid, skickar 90phase en avisering där du betygsätter nattens sömn från 1 till 5 stjärnor.</string>
+    <string name="onboarding_morning_rating_toggle">Skicka aviseringen för morgonbetyg</string>
+    <string name="onboarding_morning_rating_description">Tryck på en stjärna, 1 till 5, direkt i aviseringen.</string>
+    <string name="onboarding_morning_bedtime_description">Visas först efter att du betygsatt, så att 90phase vet hur länge du faktiskt sov.</string>
+    <string name="onboarding_morning_bedtime_toggle">Fråga också när du gick och la dig</string>
     <string name="onboarding_smart_wake_title">Smart väckning</string>
     <string name="onboarding_smart_wake_body">Din telefon känner av rörelse för att väcka dig i ett lättare ögonblick inom ett fönster du ställer in. Ingen mikrofon. Inga uppladdningar. Helt lokalt.</string>
     <string name="onboarding_smart_wake_warning">⚠ Telefonen måste ligga i sängen för att fungera. Om du laddar den någon annanstans — hoppa över det här, det hjälper dig inte.</string>

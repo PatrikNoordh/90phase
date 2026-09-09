@@ -15,12 +15,15 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
+import com.example.a90phase.domain.common.DomainConstants
 import com.example.a90phase.presentation.R
 import com.example.a90phase.presentation.components.PrimaryButton
 import com.example.a90phase.presentation.components.SleepToggle
+import com.example.a90phase.presentation.components.StarRating
 import com.example.a90phase.presentation.theme.NightSkyTheme
 import com.example.a90phase.presentation.theme.SleepColors
 import com.example.a90phase.presentation.theme.SleepTypography
@@ -169,20 +172,29 @@ internal fun OnboardingMorningCheckInCard(
         )
         Spacer(modifier = Modifier.height(Spacing.Small))
         Text(
-            text = stringResource(R.string.onboarding_morning_checkin_body),
+            text = stringResource(
+                R.string.onboarding_morning_checkin_body,
+                DomainConstants.MORNING_RATING_DELAY_MINUTES,
+            ),
             style = SleepTypography.BodyLarge,
             color = SleepColors.Silver,
             textAlign = TextAlign.Center,
         )
+        Spacer(modifier = Modifier.height(Spacing.Small))
+        // An unset star row, so "this is a rating" is visible rather than only described.
+        // Decorative — the body text above already says it, so hide it from screen readers.
+        StarRating(rating = null, modifier = Modifier.clearAndSetSemantics {})
         Spacer(modifier = Modifier.height(sectionSpacing))
         SleepToggle(
             label = stringResource(R.string.onboarding_morning_rating_toggle),
+            description = stringResource(R.string.onboarding_morning_rating_description),
             checked = morningRatingEnabled,
             onCheckedChange = onMorningRatingToggle,
         )
         Spacer(modifier = Modifier.height(Spacing.Small))
         SleepToggle(
             label = stringResource(R.string.onboarding_morning_bedtime_toggle),
+            description = stringResource(R.string.onboarding_morning_bedtime_description),
             checked = morningBedtimeLogEnabled,
             onCheckedChange = onMorningBedtimeLogToggle,
         )
